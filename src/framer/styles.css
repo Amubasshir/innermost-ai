@@ -130,10 +130,13 @@ div[style*="--framer-font-family"] {
 
 
 
+@media (max-width: 768px) {
+  .responsive-text {
+    --framer-font-size: 13px !important;
+    --framer-letter-spacing: -0.02em;
+  }
+}
 
 
 
-
-
-/*  */
 

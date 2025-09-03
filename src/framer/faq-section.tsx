@@ -1845,7 +1845,7 @@ var css7 = [
 	".framer-vjqxe.framer-v-1c77scm .framer-1p323wi, .framer-vjqxe.framer-v-b65qgm .framer-1p323wi { flex: 1 0 0px; width: 1px; }",
 	".framer-vjqxe.framer-v-1neglk7.framer-37v1ii { width: 200px; }",
 	".framer-vjqxe.framer-v-1neglk7 .framer-xoxscl { padding: 0px 30px 0px 30px; }",
-	".framer-vjqxe.framer-v-b65qgm.framer-37v1ii { padding: 100px 0px 100px 0px; width: 200px; }",
+	".framer-vjqxe.framer-v-b65qgm.framer-37v1ii { padding: 100px 0px 100px 0px; width: 100%; }",
 	".framer-vjqxe.framer-v-b65qgm .framer-1f4ll8i { padding: 0px 20px 0px 20px; width: 100%; }",
 	".framer-vjqxe.framer-v-b65qgm .framer-xoxscl { padding: 0px 20px 0px 20px; }",
 	...css,

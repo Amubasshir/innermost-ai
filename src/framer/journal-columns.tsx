@@ -3991,7 +3991,7 @@ var css6 = [
 	".framer-36kkh.framer-v-yfzksy .framer-1nh2s5h { bottom: unset; height: var(--framer-aspect-ratio-supported, 820px); left: 40px; top: -376px; width: 395px; }",
 	".framer-36kkh.framer-v-yfzksy .framer-1dpery2 { height: var(--framer-aspect-ratio-supported, 819px); right: 40px; top: 107px; width: 395px; }",
 	".framer-36kkh.framer-v-yfzksy .framer-sddy6k { flex-direction: column; gap: 32px; justify-content: flex-start; padding: 40px; }",
-	".framer-36kkh.framer-v-16rol61.framer-1vqlin7 { padding: 0px 20px 0px 20px; width: 200px; }",
+	".framer-36kkh.framer-v-16rol61.framer-1vqlin7 { padding: 0px 20px 0px 20px; width: 100%; }",
 	".framer-36kkh.framer-v-16rol61 .framer-n2bx6p { padding: 100px 0px 0px 0px; }",
 	".framer-36kkh.framer-v-16rol61 .framer-454nx8 { padding: 20px; width: 100%; }",
 	".framer-36kkh.framer-v-16rol61 .framer-5w5465 { height: var(--framer-aspect-ratio-supported, 158px); right: -71px; width: 264px; }",

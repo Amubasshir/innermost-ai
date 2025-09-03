@@ -3423,7 +3423,7 @@ var css2 = [
 	".framer-1gKDl .framer-ulju90-container { flex: none; height: auto; position: relative; width: 200px; }",
 	".framer-1gKDl.framer-v-sifvts.framer-sc5aqc { padding: 140px 50px 140px 50px; width: 1120px; }",
 	".framer-1gKDl.framer-v-ai2rji.framer-sc5aqc { padding: 120px 30px 140px 30px; width: 200px; }",
-	".framer-1gKDl.framer-v-131yvnj.framer-sc5aqc { padding: 100px 20px 140px 20px; width: 200px; }",
+	".framer-1gKDl.framer-v-131yvnj.framer-sc5aqc { padding: 100px 20px 140px 20px; width: 100%; }",
 	".framer-1gKDl.framer-v-131yvnj .framer-ocxhqh { gap: 40px; }",
 	".framer-1gKDl.framer-v-131yvnj .framer-ulju90-container { width: auto; }",
 	...css,

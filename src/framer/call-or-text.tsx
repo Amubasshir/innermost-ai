@@ -1181,6 +1181,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-text-color":
 													"var(--extracted-r6o4lv, var(--token-b96ed00f-f1b0-47f1-85a2-09f5e52d4710, rgb(36, 36, 35)))",
 											}}
+                                            className="responsive-text"
 										>
 											{
 												"Jen, when FOMO hits, pause and jot down 3 wins from your day (even small ones)."
@@ -1261,6 +1262,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																"--framer-text-color":
 																	"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
 															}}
+                                                            className="responsive-text"
 														>
 															{
 																"I get so anxious scrolling on social media\u2026like I\u2019m missing out all the time."
@@ -1396,6 +1398,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"--framer-text-color":
 													"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
 											}}
+                                            className="responsive-text"
 										>
 											{
 												"I get so anxious scrolling on social media\u2026like I\u2019m missing out all the time."
@@ -1491,6 +1494,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																			"--framer-text-color":
 																				"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
 																		}}
+                                                                        className="responsive-text"
 																	>
 																		{
 																			"That\u2019s actually really helpful. I\u2019ll try that and see if it takes the pressure off."
@@ -1513,6 +1517,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																			"--framer-text-color":
 																				"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
 																		}}
+                                                                        className="responsive-text"
 																	>
 																		{
 																			"That\u2019s actually really helpful. I\u2019ll try that and see if it takes the pressure off."
@@ -1538,6 +1543,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 															"--framer-text-color":
 																"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
 														}}
+                                                        className="responsive-text"
 													>
 														{
 															"That\u2019s actually really helpful. I\u2019ll try that and see if it takes the pressure off."
@@ -2208,7 +2214,7 @@ var css4 = [
 	".framer-01Siq .framer-1wne135-container, .framer-01Siq .framer-19jwae0-container { flex: none; height: auto; position: relative; width: 100%; }",
 	".framer-01Siq.framer-v-z04jn8.framer-9m3l71 { padding: 140px 50px 0px 50px; width: 1120px; }",
 	".framer-01Siq.framer-v-7v3tn7.framer-9m3l71 { padding: 140px 30px 0px 30px; width: 200px; }",
-	".framer-01Siq.framer-v-1x1epri.framer-9m3l71 { padding: 140px 20px 0px 20px; width: 200px; }",
+	".framer-01Siq.framer-v-1x1epri.framer-9m3l71 { padding: 140px 20px 0px 20px; width: 100%; }",
 ];
 var FramertXKcvVMmL = withCSS2(Component2, css4, "framer-01Siq");
 var stdin_default2 = FramertXKcvVMmL;
