@@ -3,6 +3,10 @@
 @import "unframer/styles/reset.css";
 @import "unframer/styles/framer.css";
 
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
     --unframer-primary-light: rgb(247, 245, 242);
     --unframer-light-grey: rgb(247, 245, 242);
@@ -73,4 +77,63 @@
     }
 }
 
+
+
+:root {
+    --unframer-primary-light: rgb(247, 245, 242);
+    --unframer-light-grey: rgb(247, 245, 242);
+    --unframer-primary-color: rgb(249, 120, 28);
+    --unframer-dark: rgb(36, 36, 35);
+    --unframer-white-100: rgb(255, 255, 255);
+
+    --token-66f6c013-6cdf-4180-9fee-2a865eb558bd: rgb(247, 245, 242);
+    --token-7cbc8809-805f-42b8-a101-1dbda095b6b0: rgb(247, 245, 242);
+    --token-a046c569-860e-4698-b73a-6f4a544ad189: rgb(249, 120, 28);
+    --token-b96ed00f-f1b0-47f1-85a2-09f5e52d4710: rgb(36, 36, 35);
+    --token-f087042b-d073-4748-a812-d40ebb0748d1: rgb(255, 255, 255);
+}
+
+/* ... rest of your existing CSS ... */
+
+/* OVERRIDE UNFRAMER FONTS - Add this at the end */
+*, *::before, *::after,
+html, body,
+div, span, p, h1, h2, h3, h4, h5, h6,
+[data-framer-component-type],
+[style*="--framer-font-family"] {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Override Framer's CSS custom properties */
+[style*="--framer-font-family"] {
+    --framer-font-family: 'Poppins', sans-serif !important;
+}
+
+/* Override any motion components */
+motion, [data-framer-name] {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Target specific Framer text elements */
+p[style*="--framer-font-family"],
+h1[style*="--framer-font-family"],
+h2[style*="--framer-font-family"],
+h3[style*="--framer-font-family"],
+h4[style*="--framer-font-family"],
+h5[style*="--framer-font-family"],
+h6[style*="--framer-font-family"],
+span[style*="--framer-font-family"],
+div[style*="--framer-font-family"] {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+/*  */
 

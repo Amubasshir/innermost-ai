@@ -3135,6 +3135,11 @@ var Component4 = /* @__PURE__ */ React4.forwardRef(function (props, ref) {
 									</RichTextWithFX>
 								</motion4.div>
 							</motion4.div>
+                            {/* <motion4.div
+                            onViewportEnter={()=> LqyozGG0N18uspy5()} onViewportLeave={()=> LqyozGG0N18uspyf4()}
+                            >
+
+                            </motion4.div> */}
 							<ComponentViewportProvider2
 								height={300}
 								width={"2550px"}
@@ -3251,6 +3256,7 @@ var Component4 = /* @__PURE__ */ React4.forwardRef(function (props, ref) {
 									})}
 								</SmartComponentScopedContainer2>
 							</ComponentViewportProvider2>
+
 							<motion4.div
 								className={"framer-10bh72x"}
 								data-framer-name={"ai guides navigation < >"}

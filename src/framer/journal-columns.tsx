@@ -3904,6 +3904,7 @@ var Component3 = /* @__PURE__ */ React3.forwardRef(function (props, ref) {
 												nodeId={"zJhaWw8rl"}
 												rendersWithMotion={true}
 												scopeId={"yqgIGYJRG"}
+                                                style={{ fontSize: "20px !important"}}
 											>
 												{_jsx4(stdin_default2, {
 													gCmmKaF_0: "Read our manifesto",
