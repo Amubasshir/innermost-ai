@@ -501,6 +501,23 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</React.Fragment>
 												),
 											},
+											CRbP10Ds7: {
+												children: (
+													<React.Fragment>
+														<motion.h3
+															className={"framer-styles-preset-1gk582c"}
+															data-styles-preset={"y0TAMp3V0"}
+															style={{
+																"--framer-text-alignment": "left",
+															}}
+														>
+															{"Text anytime, "}
+											<motion.br />
+											{"day or night"}
+														</motion.h3>
+													</React.Fragment>
+												),
+											},
 											yLsgqhpiR: {
 												children: (
 													<React.Fragment>
@@ -521,7 +538,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										gestureVariant,
 									)}
 								>
-									<React.Fragment>
+									{/* <React.Fragment>
 										<motion.h3
 											className={"framer-styles-preset-1gk582c"}
 											data-styles-preset={"y0TAMp3V0"}
@@ -533,7 +550,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											<motion.br />
 											{"day or night"}
 										</motion.h3>
-									</React.Fragment>
+									</React.Fragment> */}
 								</RichText>
 								<RichText
 									__fromCanvasComponent={true}
@@ -610,6 +627,25 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</React.Fragment>
 												),
 											},
+											CRbP10Ds7: {
+												children: (
+													<React.Fragment>
+														<motion.p
+															className={"framer-styles-preset-1i5cls4"}
+															data-styles-preset={"EPQDnqDHg"}
+															style={{
+																"--framer-text-alignment": "left",
+																"--framer-text-color":
+																	"var(--extracted-r6o4lv, var(--token-b96ed00f-f1b0-47f1-85a2-09f5e52d4710, rgb(36, 36, 35)))",
+															}}
+														>
+															{
+												"A private, secure space to share what\u2019s on your mind and get hyper-personalized support when you need it, with someone who listens closely and responds with guidance."
+											}
+														</motion.p>
+													</React.Fragment>
+												),
+											},
 											yLsgqhpiR: {
 												children: (
 													<React.Fragment>
@@ -634,7 +670,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										gestureVariant,
 									)}
 								>
-									<React.Fragment>
+									{/* <React.Fragment>
 										<motion.p
 											className={"framer-styles-preset-1i5cls4"}
 											data-styles-preset={"EPQDnqDHg"}
@@ -648,7 +684,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"A private, secure space to share what\u2019s on your mind and get hyper-personalized support when you need it, with someone who listens closely and responds with guidance."
 											}
 										</motion.p>
-									</React.Fragment>
+									</React.Fragment> */}
 								</RichText>
 							</motion.div>
 						</motion.div>
@@ -1142,6 +1178,28 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												),
 												fonts: ["GF;Poppins-regular"],
 											},
+											CRbP10Ds7: {
+												children: (
+													<React.Fragment>
+														<motion.p
+															style={{
+																"--font-selector": "R0Y7UG9wcGlucy0zMDA=",
+																"--framer-font-family":
+																	'"Poppins", "Poppins Placeholder", sans-serif',
+																"--framer-font-size": "24px",
+																"--framer-font-weight": "300",
+																"--framer-letter-spacing": "-0.03em",
+																"--framer-text-color":
+																	"var(--extracted-r6o4lv, var(--token-b96ed00f-f1b0-47f1-85a2-09f5e52d4710, rgb(36, 36, 35)))",
+															}}
+														>
+															{
+																"Jen, when FOMO hits, pause and jot down 3 wins from your day (even small ones)."
+															}
+														</motion.p>
+													</React.Fragment>
+												),
+											},
 											yLsgqhpiR: {
 												children: (
 													<React.Fragment>
@@ -1169,7 +1227,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										gestureVariant,
 									)}
 								>
-									<React.Fragment>
+									{/* <React.Fragment>
 										<motion.p
 											style={{
 												"--font-selector": "R0Y7UG9wcGlucy0zMDA=",
@@ -1186,9 +1244,111 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 											{
 												"Jen, when FOMO hits, pause and jot down 3 wins from your day (even small ones)."
 											}
+                                           
 										</motion.p>
-									</React.Fragment>
+									</React.Fragment> */}
 								</RichText>
+                                {console.log({baseVariant})}
+{/* <RichText
+  __fromCanvasComponent={true}
+  className="framer-1qhrm3f"
+  layoutDependency={layoutDependency}
+  layoutId="RVt08Gp32"
+  {...addPropertyOverrides(
+    {
+      // Default
+      CRbP10Ds7: {
+        children: <motion.p>Jen, when FOMO hits, pause and jot down 3 wins from your day.</motion.p>,
+      },
+      // Variant 1
+      yLsgqhpiR: {
+        children: <motion.p>Glad I could help, I’m here anytime you need me.</motion.p>,
+      },
+    },
+    baseVariant,
+    gestureVariant,
+  )}
+/> */}
+                                {/* <RichText
+  __fromCanvasComponent={true}
+  className="framer-1qhrm3f"
+  layoutDependency={layoutDependency}
+  layoutId="RVt08Gp32"
+  {...addPropertyOverrides(
+    {
+
+        default: {
+        children: (
+          <motion.p
+            className="responsive-text"
+            style={{
+              "--framer-font-family": '"Poppins", "Poppins Placeholder", sans-serif',
+              "--framer-font-size": "20px",
+              "--framer-font-weight": "300",
+              "--framer-letter-spacing": "-0.03em",
+              "--framer-text-color": "rgb(36, 36, 35)",
+            }}
+          >
+            Jen, when FOMO hits, pause and jot down 3 wins from your day (even small ones).
+          </motion.p>
+        ),
+      },
+
+      // Variant 1
+      yLsgqhpiR: {
+        children: (
+          <motion.p
+            style={{
+              "--framer-font-family": '"Poppins", "Poppins Placeholder", sans-serif',
+              "--framer-font-size": "22px",
+              "--framer-font-weight": "300",
+              "--framer-letter-spacing": "-0.03em",
+              "--framer-text-color": "rgb(36, 36, 35)",
+            }}
+          >
+            Glad I could help, I’m here anytime you need me.
+          </motion.p>
+        ),
+      },
+
+      // Variant 2
+      yLsgqhpiR: {
+        children: (
+          <motion.p
+            style={{
+              "--framer-font-family": '"Poppins", "Poppins Placeholder", sans-serif',
+              "--framer-font-size": "18px",
+              "--framer-font-weight": "300",
+              "--framer-letter-spacing": "-0.03em",
+              "--framer-text-color": "rgb(36, 36, 35)",
+            }}
+          >
+            Set a timer for your next check-in and then shift your focus to something that matters today.
+          </motion.p>
+        ),
+      },
+
+    //     yLsgqhpiR: {
+    //       children: (
+    //         <motion.p style={{ fontSize: "22px", fontWeight: 300 }}>
+    //           Glad I could help, I’m here anytime you need me.
+    //         </motion.p>
+    //       ),
+    //     },
+    //   default: {
+    //       children: (
+    //         <motion.p style={{ fontSize: "22px", fontWeight: 300 }}>
+    //           Default text goes here...
+    //         </motion.p>
+    //       ),
+    //   },
+    },
+    baseVariant,
+    gestureVariant,
+  )}
+>
+</RichText> */}
+
 							</MotionDivWithFX>
 							<MotionDivWithFX
 								__framer__animate={{
@@ -1359,6 +1519,28 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												),
 												fonts: ["GF;Poppins-regular"],
 											},
+											CRbP10Ds7: {
+												children: (
+													<React.Fragment>
+														<motion.p
+															style={{
+																"--font-selector": "R0Y7UG9wcGlucy0zMDA=",
+																"--framer-font-family":
+																	'"Poppins", "Poppins Placeholder", sans-serif',
+																"--framer-font-size": "24px",
+																"--framer-font-weight": "300",
+																"--framer-letter-spacing": "-0.03em",
+																"--framer-text-color":
+																	"var(--extracted-r6o4lv, var(--token-f087042b-d073-4748-a812-d40ebb0748d1, rgb(255, 255, 255)))",
+															}}
+														>
+															{
+																"I get so anxious scrolling on social media\u2026like I\u2019m missing out all the time."
+															}
+														</motion.p>
+													</React.Fragment>
+												),
+											},
 											yLsgqhpiR: {
 												children: (
 													<React.Fragment>
@@ -1386,7 +1568,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										gestureVariant,
 									)}
 								>
-									<React.Fragment>
+									{/* <React.Fragment>
 										<motion.p
 											style={{
 												"--font-selector": "R0Y7UG9wcGlucy0zMDA=",
@@ -1404,7 +1586,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 												"I get so anxious scrolling on social media\u2026like I\u2019m missing out all the time."
 											}
 										</motion.p>
-									</React.Fragment>
+									</React.Fragment> */}
 								</RichText>
 							</MotionDivWithFX>
 							{isDisplayed() && (
