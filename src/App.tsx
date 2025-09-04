@@ -18,7 +18,7 @@ import JournalIdeasFramerComponent from './framer/journal-ideas';
 
 export default function App() {
     return (
-        <div className="flex flex-col items-center gap-3 bg-[rgb(255,_255,_255)]">
+        <div className="flex flex-col items-center gap-3 bg-[rgb(255,_255,_255)] overflow-hidden">
         <HeaderFramerComponent.Responsive />
         <br />
         <br />
