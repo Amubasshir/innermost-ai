@@ -15,7 +15,8 @@
     "@motionone/dom": "^10.18.0",
     "react": "latest",
     "react-dom": "latest",
-    "unframer": "latest"
+    "unframer": "latest",
+    "use-breakpoint": "^4.0.6"
   },
   "devDependencies": {
     "@types/react": "latest",

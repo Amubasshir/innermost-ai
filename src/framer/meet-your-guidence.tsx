@@ -34,7 +34,8 @@ import {
 
 // virtual:meet-your-guides
 import { Fragment as Fragment7 } from "react";
-import { ContextProviders } from "unframer";
+import { ContextProviders, UnframerBreakpoint  } from "unframer";
+import { useBreakpoint } from 'use-breakpoint';
 
 // /:https://framerusercontent.com/modules/cWrkgS0X1ezZC32yobra/s0mSxOwt7hZYRinw39ys/Bz5MYDv8n.js
 import { jsx as _jsx8, jsxs as _jsxs4 } from "react/jsx-runtime";
@@ -372,6 +373,7 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 		variant,
 		variantClassNames,
 	});
+    
 	const layoutDependency = createLayoutDependency(props, variants);
 	const { activeVariantCallback, delay } =
 		useActiveVariantCallback(baseVariant);
@@ -4360,12 +4362,27 @@ var createLayoutDependency6 = (props, variants) => {
 		return variants.join("-") + props.layoutDependency;
 	return variants.join("-");
 };
+
+const BREAKPOINTS = { 
+  xs: 0, 
+  sm: 640, 
+  md: 768, 
+  lg: 1024, 
+  xl: 1280 
+};
+
 var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 	const fallbackRef = useRef9(null);
 	const refBinding = ref ?? fallbackRef;
 	const defaultLayoutId = React8.useId();
 	const { activeLocale, setLocale } = useLocaleInfo6();
+
 	const componentViewport = useComponentViewport6();
+    const { breakpoint } = useBreakpoint(BREAKPOINTS, 'xs');
+
+
+    console.log({breakpoint})
+
 	const {
 		style,
 		className: className7,
@@ -4375,7 +4392,7 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 		aM9SN1G6W,
 		...restProps
 	} = getProps7(props);
-	const {
+	let {
 		baseVariant,
 		classNames,
 		clearLoadingGesture,
@@ -4557,6 +4574,9 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 	const NTMsYmn8K1ovemtx = activeVariantCallback(async (...args) => {
 		setVariant("n_qYcWEcG");
 	});
+	const NTMsYmn8K1ovemWho_ = activeVariantCallback(async (...args) => {
+		setVariant("ooIHaWho_");
+	});
 	const sharedStyleClassNames = [
 		className,
 		className2,
@@ -4575,7 +4595,38 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 
     // useEffect(() => {
     //     LqyozGG0N18uspy5();
+    //     NTMsYmn8Ke0gv25();
     // }, [])
+
+    // base: "ooIHaWho_",
+	// md: "h79aYo1O1",
+	// lg: "aJcbm33F4",
+	// "2xl": "VNPb8aJ_f",
+
+    const handleEnterViewPort = () => {
+
+        console.log("hoi i am")
+        switch (breakpoint) {
+            case 'xl':
+                LqyozGG0Nfbzlgc()
+                break;
+        
+            case 'lg':
+                LqyozGG0N18uspyf4()
+                break;
+        
+            // case 'md':
+            //     NTMsYmn8K1ovemWho_()
+            //     break;
+                
+            default:
+                LqyozGG0Nqdgl5b();
+                // NTMsYmn8Ke0gv25()
+            //     NTMsYmn8K1ovemWho_()
+            // baseVariant = 'ooIHaWho_'
+                break;
+        }
+    }
 
 	return (
 		<LayoutGroup6 id={layoutId ?? defaultLayoutId}>
@@ -4857,10 +4908,14 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 									</RichTextWithFX>
 								</motion6.div>
 							</motion6.div>
-                            <motion6.div onViewportEnter={()=> LqyozGG0N18uspy5()} onViewportLeave={()=> LqyozGG0N18uspyf4()} >
+                            
+                          
+                            {console.log({componentViewport, layoutDependency, stdin_default5, baseVariant, gestureVariant,})}
 							<ComponentViewportProvider3
+                                // ref={currentRef}
 								height={300}
 								width={"2550px"}
+                                // style={{maxWidth: '2250px', width: "100%"}}
 								y={(componentViewport?.y || 0) + 26 + 0 + 0 + 447.6}
 							>
 								<SmartComponentScopedContainer3
@@ -4974,14 +5029,17 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 									})}
 								</SmartComponentScopedContainer3>
 							</ComponentViewportProvider3>
-                            </motion6.div>
+                            
+                           
+                            
 							<motion6.div
 								className={"framer-10bh72x"}
 								data-framer-name={"ai guides navigation < >"}
 								layoutDependency={layoutDependency}
 								layoutId={"PLX9Bo8TZ"}
-                                 
-							>
+                                onViewportEnter={handleEnterViewPort} onViewportLeave={()=> LqyozGG0N18uspyf4()}
+                                // onViewportEnter={()=> NTMsYmn8Ke0gv25()} onViewportLeave={()=> LqyozGG0N18uspyf4()}
+                                >
 								<ComponentViewportProvider3
 									height={40}
 									y={(componentViewport?.y || 0) + 26 + 0 + 0 + 779.6 + 0}
@@ -5108,6 +5166,7 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 									height={40}
 									y={(componentViewport?.y || 0) + 26 + 0 + 0 + 779.6 + 0}
 								>
+                                    {console.log({baseVariant, gestureVariant})}
 									<SmartComponentScopedContainer3
 										className={"framer-7psyfe-container"}
 										layoutDependency={layoutDependency}
@@ -5123,6 +5182,7 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 											NTMsYmn8K: NTMsYmn8Ke0gv25,
 											variant: "SFpBNvzIX",
 											width: "100%",
+                                            // onClick: () => console.log("i am clicked"),
 											...addPropertyOverrides6(
 												{
 													aJcbm33F4: {
@@ -5228,6 +5288,8 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 								</ComponentViewportProvider3>
 							</motion6.div>
 						</motion6.div>
+
+                        
 						<motion6.div
 							className={"framer-wlyg6x"}
 							data-framer-name={"title+content wrapper"}
@@ -5682,7 +5744,7 @@ var Component6 = /* @__PURE__ */ React8.forwardRef(function (props, ref) {
 var css12 = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
 	".framer-U1eY4.framer-11szwgr, .framer-U1eY4 .framer-11szwgr { display: block; }",
-	".framer-U1eY4.framer-yef9nc { align-content: center; align-items: center; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 60px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 26px 0px 26px 0px; position: relative; width: 1920px; }",
+	".framer-U1eY4.framer-yef9nc { align-content: center; align-items: center; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 60px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 26px 0px 26px 0px; position: relative; max-width: 1920px; width: 100%; }",
 	".framer-U1eY4 .framer-pznoiv { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
 	".framer-U1eY4 .framer-t82snl { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 4px; height: min-content; justify-content: flex-start; max-width: 100%; overflow: visible; padding: 0px 0px 0px 8px; position: relative; width: 946px; }",
 	".framer-U1eY4 .framer-7c6pld, .framer-U1eY4 .framer-1hz7ijh, .framer-U1eY4 .framer-813wp9, .framer-U1eY4 .framer-18t1n92, .framer-U1eY4 .framer-2ycwtx, .framer-U1eY4 .framer-1p3919w, .framer-U1eY4 .framer-15o3lom { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
@@ -5694,7 +5756,7 @@ var css12 = [
 	".framer-U1eY4 .framer-1a0trfo { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 4px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px 0px 0px 8px; position: relative; width: min-content; }",
 	".framer-U1eY4 .framer-1rkrcjk { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: min-content; }",
 	".framer-U1eY4 .framer-11c2bd3, .framer-U1eY4 .framer-1bq613s { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-U1eY4 .framer-1odigiy { display: grid; flex: none; gap: 80px; grid-auto-rows: min-content; grid-template-columns: repeat(3, minmax(50px, 1fr)); grid-template-rows: repeat(1, min-content); height: min-content; justify-content: center; max-width: 1120px; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+	".framer-U1eY4 .framer-1odigiy { display: grid; flex: none; gap: 70px; grid-auto-rows: min-content; grid-template-columns: repeat(3, minmax(50px, 1fr)); grid-template-rows: repeat(1, min-content); height: min-content; justify-content: center; max-width: 1120px; overflow: visible; padding: 0px; position: relative; width: 100%; }",
 	".framer-U1eY4 .framer-riztqg, .framer-U1eY4 .framer-85mw1k, .framer-U1eY4 .framer-11wzlaq { align-content: flex-start; align-items: flex-start; align-self: start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: flex-start; justify-self: start; overflow: visible; padding: 0px; position: relative; width: 100%; }",
 	".framer-U1eY4 .framer-xb2exx, .framer-U1eY4 .framer-muwtzr, .framer-U1eY4 .framer-ccjim7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: flex-start; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
 	".framer-U1eY4 .framer-1gh830w, .framer-U1eY4 .framer-1wujwqr, .framer-U1eY4 .framer-1w1pk3u { flex: none; gap: 0px; height: 24px; overflow: hidden; position: relative; width: 24px; }",
